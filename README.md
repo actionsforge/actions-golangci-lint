@@ -36,7 +36,7 @@ permissions:
 
 jobs:
   golangci-lint:
-    uses: cloudbuildlab/actions-golangci-lint/.github/workflows/golangci-lint.yml@v0
+    uses: actionsforge/actions-golangci-lint/.github/workflows/golangci-lint.yml@v0
 ```
 
 ### Advanced Usage
@@ -56,7 +56,7 @@ permissions:
 
 jobs:
   golangci-lint:
-    uses: cloudbuildlab/actions-golangci-lint/.github/workflows/golangci-lint.yml@v0
+    uses: actionsforge/actions-golangci-lint/.github/workflows/golangci-lint.yml@v0
     with:
       go-version: '1.21'
       golangci-lint-version: 'v1.55.2'
@@ -162,7 +162,7 @@ This workflow follows semantic versioning. You can use it in two ways:
 1. **Major Version Tag** (Recommended):
 
    ```yaml
-   uses: cloudbuildlab/actions-golangci-lint/.github/workflows/golangci-lint.yml@v0
+   uses: actionsforge/actions-golangci-lint/.github/workflows/golangci-lint.yml@v0
    ```
 
    This will automatically use the latest release within the v0.x.x series.
@@ -170,7 +170,7 @@ This workflow follows semantic versioning. You can use it in two ways:
 2. **Specific Version**:
 
    ```yaml
-   uses: cloudbuildlab/actions-golangci-lint/.github/workflows/golangci-lint.yml@v0.1.0
+   uses: actionsforge/actions-golangci-lint/.github/workflows/golangci-lint.yml@v0.1.0
    ```
 
    This pins to a specific version for maximum stability.
